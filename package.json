@@ -1,0 +1,8 @@
+{
+  "name": "tariq-electrical",
+  "version": "1.0.0",
+  "description": "Tariq Electrical — Industrial Control Panels Website",
+  "scripts": {
+    "dev": "npx serve . --listen 3000"
+  }
+}
