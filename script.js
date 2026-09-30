@@ -103,6 +103,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Close menu when tapping anywhere outside on mobile
+  document.addEventListener('click', (e) => {
+    if (navLinksContainer.classList.contains('open')) {
+      if (!navLinksContainer.contains(e.target) && !hamburger.contains(e.target)) {
+        navLinksContainer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      }
+    }
+  });
+
+  // Also close mobile menu on scroll
+  window.addEventListener('scroll', () => {
+    if (navLinksContainer.classList.contains('open') && window.scrollY > 30) {
+      navLinksContainer.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    }
+  }, { passive: true });
+
   /* ---- Scroll reveal ---- */
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
