@@ -154,10 +154,12 @@ body {
 }
 
 .brand-logo-img {
-  height: 42px;
-  width: 42px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 44px;
+  width: 44px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 2px;
   box-shadow: 0 0 14px rgba(249,115,22,0.35);
   border: 1.5px solid rgba(249,115,22,0.5);
   transition: transform var(--transition), box-shadow var(--transition);

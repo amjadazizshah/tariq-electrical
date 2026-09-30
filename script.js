@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCopyBtn = document.getElementById('modal-copy-btn');
   const modalCopyText = document.getElementById('modal-copy-text');
 
-  function openEmailModal(subject = 'Inquiry for Tariq Electrical', body = 'Hello Tariq,\n\nI would like to inquire about your electrical control panel services.\n\nBest regards,') {
+  function openEmailModal(subject = 'Inquiry for Saim Electric Service', body = 'Hello Tariq,\n\nI would like to inquire about Saim Electric Service control panel and power services.\n\nBest regards,') {
     const toEmail = 'mtariqn@gmail.com';
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(toEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const mailtoUrl = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -270,8 +270,8 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       openEmailModal(
-        'Inquiry for Tariq Electrical Services',
-        'Hello Tariq,\n\nI saw your portfolio and would like to discuss an electrical control panel / power project with you.\n\nBest regards,'
+        'Inquiry for Saim Electric Service',
+        'Hello Tariq,\n\nI saw your portfolio and would like to discuss an electrical control panel / power project with Saim Electric Service.\n\nBest regards,'
       );
     });
   });

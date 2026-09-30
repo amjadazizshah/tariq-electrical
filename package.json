@@ -1,7 +1,7 @@
 {
-  "name": "tariq-electrical",
+  "name": "saim-electric-service",
   "version": "1.0.0",
-  "description": "Tariq Electrical — Industrial Control Panels Website",
+  "description": "Saim Electric Service — Industrial Control Panels Website",
   "scripts": {
     "dev": "npx serve . --listen 3000"
   }
